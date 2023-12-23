@@ -1185,9 +1185,9 @@ Color changes in some parts of the website, in dark theme
 
 .contact__social-description-2
 {
-    color: var(--white-color);
+    color: var(--black-color);
     font-size: var(--small-font-size);
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-bold);
 
 }
 
@@ -1329,12 +1329,14 @@ Color changes in some parts of the website, in dark theme
 
     .home__image
     {
-        width: 180px;
+        /* Increase the width by 1.5 times */
+        width: 270px; /* 180px * 1.5 = 270px */
     }
 
     .about__image
     {
-        width: 180px;
+        /* Increase the width by 1.5 times */
+        width: 270px; /* 180px * 1.5 = 270px */
     }
 
     .about__shadow
@@ -1348,6 +1350,8 @@ Color changes in some parts of the website, in dark theme
         transform: translateX(0);
     }
 }
+
+
 /* For medium devices */
 @media screen and (min-width: 576px)
 {
@@ -1579,8 +1583,8 @@ Color changes in some parts of the website, in dark theme
 
     .home__arrow
     {
-        top: 3.0rem;
-        left: -8rem;
+        top: 1.0rem;
+        left: -10rem;
         rotate: 80deg;
         width: 80px;
     }
@@ -1588,7 +1592,7 @@ Color changes in some parts of the website, in dark theme
     .home__line
     {
         left: -15rem;
-        bottom: 4rem;
+        bottom: 2rem;
         width: 80px;
         rotate: 30deg;
     }
@@ -1754,7 +1758,7 @@ Color changes in some parts of the website, in dark theme
     .contact__container
     {
         grid-template-columns: 440px 670px;
-        grid-template-columns: initial;
+        grid-template-rows: initial;
         padding: 2rem;
     }
 
@@ -1766,10 +1770,23 @@ Color changes in some parts of the website, in dark theme
         margin-top: 0;
     }
 
+    .contact__title
+    {
+        font-size: var(--h3-font-size);
+        text-align: initial;
+    }
+
     .contact__box
     {
         height: 60px;
     }
+
+    .contact__form .contact__area
+    {
+        height: 11rem;
+    }
+
+
     .contact__bottom
     {
         margin-top: 1.25rem;
