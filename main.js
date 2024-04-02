@@ -121,3 +121,31 @@ if (selectedTheme) {
   themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
 }
 
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
+
+
+// =======SCROLL REVEAL=======
+const sr = ScrollReveal 
+(
+    {
+        origin: 'top',
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
+        // reset: true // animation repeat
+    }
+)
+
+sr.reveal('.home__perfil, .about__image, .contact__mail',{origin: 'right'})
+sr.reveal('.home__name, home__info, .about__container .section__title-1, about__info, .contact__social, .contact__data',{origin: 'left'})
+
+
+sr.reveal('.services__card, .projects__card',{interval:100})
