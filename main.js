@@ -45,7 +45,7 @@ const sendEmail = (e) =>
 {
     e.preventDefault()
     //serviceID - templateID - #form publicKey
-    emailjs.sendForm('','template_cgboy5y','#contact-form','HlCMnwBpr4ZZU9BFQ')
+    emailjs.sendForm('service_x4hduto','template_cgboy5y','#contact-form','HlCMnwBpr4ZZU9BFQ')
     .then(()=>
     {
         //Show sent message
@@ -68,7 +68,7 @@ const sendEmail = (e) =>
 
 }
 
-contactForm.addEventListener('submit' , sendEmail)
+('submit' , sendEmail)
 
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{
