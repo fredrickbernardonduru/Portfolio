@@ -1815,4 +1815,51 @@ Color changes in some parts of the website, in dark theme
         text-align: initial;
     }
 
- 
+    .contact__social-data
+    {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 1.25rem;
+    }
+
+    .contact__social-arrow
+    {
+        width: 40px;
+    }
+
+    .contact__social-link
+    {
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+
+    .contact__message
+    {
+        bottom: -2.5rem;
+    }
+
+    .dark-theme .contact__data
+    {
+        box-shadow: 4px 8px hsla(14, 80%, 50%, .3);
+    }
+
+    .footer_container
+    {
+        padding-block: 4rem;
+        grid-template-columns: repeat(2, max-content);
+        justify-content: space-between;
+    }
+
+
+    .footer_link
+    {
+        column-gap: 3rem;
+        order: 1;
+    }
+
+    .scrollup
+    {
+        right: 3rem;
+    }
+
+}
