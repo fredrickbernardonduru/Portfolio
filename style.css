@@ -1815,12 +1815,7 @@ Color changes in some parts of the website, in dark theme
         text-align: initial;
     }
 
-    .contact__social-data
-    {
-        flex-direction: row;
-        align-items: center;
-        column-gap: 1.25rem;
-    }
+
 
     .contact__social-arrow
     {
