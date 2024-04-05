@@ -1394,7 +1394,7 @@ Color changes in some parts of the website, in dark theme
 
     .contact__social-description-1
     {
-        color: var(--text-color);
+        color: var(---color);
     }
     .contact__social-description-2
     {
